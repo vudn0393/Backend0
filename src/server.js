@@ -8,6 +8,10 @@ const app = express(); //app express
 const port = process.env.PORT; //port
 const hostname = process.env.HOSTNAME;
 
+//config req.body
+app.use(express.json());
+app.use(express.urlencoded({ extended: true}));
+
 //config template engine
 configViewEngine(app);
 
@@ -19,7 +23,7 @@ app.use('/', webRoutes);
 connection.query(
   'SELECT * FROM Users u',
   function (err, results, fields) {
-    console.log("results: ", results);
+    // console.log("results: ", results);
     // console.log("fields: " ,fields);
   }
 );
