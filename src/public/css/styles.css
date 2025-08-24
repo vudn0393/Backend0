@@ -46,3 +46,27 @@ button {
     margin: 10px;
     cursor: pointer;
 }
+
+/* Home  */
+
+table {
+    width: 100%;
+    /* padding: 20px; */
+    margin: 20px;
+    border: 2px solid #ccc;
+}
+
+thead {
+    background-color: #04AA6D;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+tbody tr:hover {
+    background-color: #ccc;
+}
